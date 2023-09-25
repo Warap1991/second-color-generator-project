@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Color Generator</title>
+</head>
+<body>
+    <header>
+        <h1>Color Generator project</h1>
+    </header>
+    <main>
+        <div class="color-input">
+            <label for="base-color">Base Color:</label>
+            <input type="color" id="base-color">
+        </div>
+        <div class="color-options">
+            <label for="predefined-colors">Predefined Colors:</label>
+            <select id="predefined-colors">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+        <div class="color-controls">
+            <label for="saturation">Saturation:</label>
+            <input type="range" id="saturation" min="0" max="100">
+            <label for="brightness">Brightness:</label>
+            <input type="range" id="brightness" min="0" max="100">
+            <label for="contrast">Contrast:</label>
+            <input type="range" id="contrast" min="0" max="100">
+        </div>
+        <button id="generate-button">Generate Color</button>
+        <div class="color-display">
+            <div id="generated-color"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Color Generator by TCHAMASSE Warapisse</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
